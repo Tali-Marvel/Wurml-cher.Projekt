@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap');
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,400px);
+    grid-gap: 50px;
+ grid-template-areas: " Bild1 Text1 Text2"
+ " Bild2 Text3 Text3" "Bild2 Text4 Text4";
+}
+
+
+.Bild1{
+    grid-area: Bild1;
+}
+
+.Text1{
+    grid-area: Text1;
+}
+
+
+.Text2{
+    grid-area: Text2;
+}
+
+
+.Bild2{
+    grid-area: Bild2;
+
+}
+
+.Bild2 img {
+    width: 100%;
+
+}
+
+
+.Text3{
+    grid-area: Text3;
+}
+
+
+
+.Text4{
+    grid-area: Text4;
+}
+
+
+body {
+    font-size: 15px;
+    color: rgb(255, 255, 255);
+    background-color: #111;
+    padding: 50px 3%;
+    line-height:1.2 ;
+    font-family: "Syne Mono";
+}
+
+
+h1 {
+    text-align: center;
+    color: rgb(6, 205, 219);
+    font-size: 50px;
+    margin-bottom: 80px;
+}
