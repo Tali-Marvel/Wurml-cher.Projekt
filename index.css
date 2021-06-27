@@ -47,12 +47,13 @@
 
 
 body {
-    font-size: 15px;
+    font-size: calc(0.5vw + 3px);
     color: rgb(255, 255, 255);
     background-color: #111;
     padding: 50px 3%;
     line-height:1.2 ;
     font-family: "Syne Mono";
+
 }
 
 
@@ -62,3 +63,35 @@ h1 {
     font-size: 50px;
     margin-bottom: 80px;
 }
+
+
+@media  (max-width : 1300px ) {
+    .grid {
+         grid-template-columns: 1fr ;
+         grid-template-rows: 300px 500px 200px 300px 600px 250px ;
+         grid-template-areas: unset;
+        }
+   .Bild2 img {
+       width: 50vw;
+       margin: 0 25vw;
+   }    
+
+
+   .Bild1 img {
+    width: 50vw;
+    margin: 0 25vw;
+}  
+
+
+
+.Bild2 , .Bild1 {
+    width: 100%;
+}
+        
+
+
+    .grid >div {
+        grid-area: unset ;
+    }    
+}
+
